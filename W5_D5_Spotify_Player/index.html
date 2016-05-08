@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+<nav>
+<div class="container">
+<div class="col-md-12">
+	<div class="col-md-2"></div>
+  <div class="col-md-5"><img id="logo" src="spot.jpg" alt="Spotyfake"></div>
+  <div class="col-md-2"></div>
+ 	<div class="col-md-5">
+ 		<form>
+  		<label>Search for track:<input type="text" class="track"></label>
+  		<button class="js-submit" type="submit">SEARCH!</button>
+  </form>
+ 	</div>
+</div>
+</nav>
+	
+	
+</div>    
+	<div class="widget">
+		<div class="header">
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div class="btn-play disabled"></div>
+
+		<div class="metadata">
+		  <p class="title">Song</p>
+		  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#authorModal"><p class="author">Artist</p></button>
+
+		  <div class="seekbar">
+		    <progress value="0" max="100"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover">
+		<img class="cover" src="">
+		</div>
+
+		<audio class="js-player" src=""></audio>
+	</div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="authorModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="artist-name"></h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+          	<li>Genres: <p class="geners"></p></li>
+          	<li >Followers: <p class="followers"></p></li>
+          	<li>Popularity: <p class="popularity"></p></li>
+          	<img class="image" src="">
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+		
+	<script src="jquery-2.1.4.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="spotify.js"></script>
+
+</body>
+</html>
